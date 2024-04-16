@@ -1,0 +1,937 @@
+{
+  "events": [
+    {
+      "defined_class": "miPrincipal.AppTest",
+      "event": "call",
+      "id": 1,
+      "lineno": 22,
+      "method_id": "testPOS",
+      "path": "src/test/java/miPrincipal/AppTest.java",
+      "receiver": {
+        "class": "miPrincipal.AppTest",
+        "object_id": 443348849,
+        "value": "miPrincipal.AppTest@1a6cf771"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "workflow.POS",
+      "event": "call",
+      "id": 2,
+      "lineno": 22,
+      "method_id": "EnterItem",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "upc",
+          "object_id": 382044126,
+          "value": "1"
+        },
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "quantity",
+          "object_id": 382044126,
+          "value": "1"
+        }
+      ],
+      "path": "src/main/java/workflow/POS.java",
+      "receiver": {
+        "class": "workflow.POS",
+        "object_id": 1289454852,
+        "value": "workflow.POS@4cdb8504"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.ProductCatalog",
+      "event": "call",
+      "id": 3,
+      "lineno": 23,
+      "method_id": "specification",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "upc",
+          "object_id": 382044126,
+          "value": "1"
+        }
+      ],
+      "path": "src/main/java/domain/ProductCatalog.java",
+      "receiver": {
+        "class": "domain.ProductCatalog",
+        "object_id": 1981372076,
+        "value": "domain.ProductCatalog@761956ac"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0001791,
+      "event": "return",
+      "id": 4,
+      "parent_id": 3,
+      "return_value": {
+        "class": "domain.ProductSpecification",
+        "object_id": 919376773,
+        "value": "domain.ProductSpecification@36cc9385"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.Sale",
+      "event": "call",
+      "id": 5,
+      "lineno": 25,
+      "method_id": "makeLineItem",
+      "parameters": [
+        {
+          "class": "domain.ProductSpecification",
+          "kind": "req",
+          "name": "spec",
+          "object_id": 919376773,
+          "value": "domain.ProductSpecification@36cc9385"
+        },
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "quantity",
+          "object_id": 382044126,
+          "value": "1"
+        }
+      ],
+      "path": "src/main/java/domain/Sale.java",
+      "receiver": {
+        "class": "domain.Sale",
+        "object_id": 2046652309,
+        "value": "domain.Sale@79fd6f95"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0024418,
+      "event": "return",
+      "id": 6,
+      "parent_id": 5,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0205274,
+      "event": "return",
+      "id": 7,
+      "parent_id": 2,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "workflow.POS",
+      "event": "call",
+      "id": 8,
+      "lineno": 22,
+      "method_id": "EnterItem",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "upc",
+          "object_id": 1323706655,
+          "value": "2"
+        },
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "quantity",
+          "object_id": 1323706655,
+          "value": "2"
+        }
+      ],
+      "path": "src/main/java/workflow/POS.java",
+      "receiver": {
+        "class": "workflow.POS",
+        "object_id": 1289454852,
+        "value": "workflow.POS@4cdb8504"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.ProductCatalog",
+      "event": "call",
+      "id": 9,
+      "lineno": 23,
+      "method_id": "specification",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "upc",
+          "object_id": 1323706655,
+          "value": "2"
+        }
+      ],
+      "path": "src/main/java/domain/ProductCatalog.java",
+      "receiver": {
+        "class": "domain.ProductCatalog",
+        "object_id": 1981372076,
+        "value": "domain.ProductCatalog@761956ac"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.000044,
+      "event": "return",
+      "id": 10,
+      "parent_id": 9,
+      "return_value": {
+        "class": "domain.ProductSpecification",
+        "object_id": 721671471,
+        "value": "domain.ProductSpecification@2b03d52f"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.Sale",
+      "event": "call",
+      "id": 11,
+      "lineno": 25,
+      "method_id": "makeLineItem",
+      "parameters": [
+        {
+          "class": "domain.ProductSpecification",
+          "kind": "req",
+          "name": "spec",
+          "object_id": 721671471,
+          "value": "domain.ProductSpecification@2b03d52f"
+        },
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "quantity",
+          "object_id": 1323706655,
+          "value": "2"
+        }
+      ],
+      "path": "src/main/java/domain/Sale.java",
+      "receiver": {
+        "class": "domain.Sale",
+        "object_id": 2046652309,
+        "value": "domain.Sale@79fd6f95"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000141,
+      "event": "return",
+      "id": 12,
+      "parent_id": 11,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0001945,
+      "event": "return",
+      "id": 13,
+      "parent_id": 8,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "workflow.POS",
+      "event": "call",
+      "id": 14,
+      "lineno": 22,
+      "method_id": "EnterItem",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "upc",
+          "object_id": 382044126,
+          "value": "1"
+        },
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "quantity",
+          "object_id": 382044126,
+          "value": "1"
+        }
+      ],
+      "path": "src/main/java/workflow/POS.java",
+      "receiver": {
+        "class": "workflow.POS",
+        "object_id": 1289454852,
+        "value": "workflow.POS@4cdb8504"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.ProductCatalog",
+      "event": "call",
+      "id": 15,
+      "lineno": 23,
+      "method_id": "specification",
+      "parameters": [
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "upc",
+          "object_id": 382044126,
+          "value": "1"
+        }
+      ],
+      "path": "src/main/java/domain/ProductCatalog.java",
+      "receiver": {
+        "class": "domain.ProductCatalog",
+        "object_id": 1981372076,
+        "value": "domain.ProductCatalog@761956ac"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000257,
+      "event": "return",
+      "id": 16,
+      "parent_id": 15,
+      "return_value": {
+        "class": "domain.ProductSpecification",
+        "object_id": 919376773,
+        "value": "domain.ProductSpecification@36cc9385"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.Sale",
+      "event": "call",
+      "id": 17,
+      "lineno": 25,
+      "method_id": "makeLineItem",
+      "parameters": [
+        {
+          "class": "domain.ProductSpecification",
+          "kind": "req",
+          "name": "spec",
+          "object_id": 919376773,
+          "value": "domain.ProductSpecification@36cc9385"
+        },
+        {
+          "class": "java.lang.Integer",
+          "kind": "req",
+          "name": "quantity",
+          "object_id": 382044126,
+          "value": "1"
+        }
+      ],
+      "path": "src/main/java/domain/Sale.java",
+      "receiver": {
+        "class": "domain.Sale",
+        "object_id": 2046652309,
+        "value": "domain.Sale@79fd6f95"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000463,
+      "event": "return",
+      "id": 18,
+      "parent_id": 17,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0001325,
+      "event": "return",
+      "id": 19,
+      "parent_id": 14,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "workflow.POS",
+      "event": "call",
+      "id": 20,
+      "lineno": 17,
+      "method_id": "endSale",
+      "path": "src/main/java/workflow/POS.java",
+      "receiver": {
+        "class": "workflow.POS",
+        "object_id": 1289454852,
+        "value": "workflow.POS@4cdb8504"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.Sale",
+      "event": "call",
+      "id": 21,
+      "lineno": 18,
+      "method_id": "becomeComplete",
+      "path": "src/main/java/domain/Sale.java",
+      "receiver": {
+        "class": "domain.Sale",
+        "object_id": 2046652309,
+        "value": "domain.Sale@79fd6f95"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000335,
+      "event": "return",
+      "id": 22,
+      "parent_id": 21,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0006257,
+      "event": "return",
+      "id": 23,
+      "parent_id": 20,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.Sale",
+      "event": "call",
+      "id": 24,
+      "lineno": 30,
+      "method_id": "total",
+      "path": "src/main/java/domain/Sale.java",
+      "receiver": {
+        "class": "domain.Sale",
+        "object_id": 2046652309,
+        "value": "domain.Sale@79fd6f95"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 25,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 1257703748,
+        "value": "domain.SaleLineItem@4af70944"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000671,
+      "event": "return",
+      "id": 26,
+      "parent_id": 25,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 891715540,
+        "value": "100.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 27,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 3768050,
+        "value": "domain.SaleLineItem@397ef2"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0002654,
+      "event": "return",
+      "id": 28,
+      "parent_id": 27,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 916897446,
+        "value": "400.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 29,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 1156135967,
+        "value": "domain.SaleLineItem@44e93c1f"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000341,
+      "event": "return",
+      "id": 30,
+      "parent_id": 29,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 1110913929,
+        "value": "100.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0008915,
+      "event": "return",
+      "id": 31,
+      "parent_id": 24,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 162667475,
+        "value": "600.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "workflow.POS",
+      "event": "call",
+      "id": 32,
+      "lineno": 32,
+      "method_id": "makePayment",
+      "parameters": [
+        {
+          "class": "java.lang.Float",
+          "kind": "req",
+          "name": "cashTendered",
+          "object_id": 174245837,
+          "value": "650.0"
+        }
+      ],
+      "path": "src/main/java/workflow/POS.java",
+      "receiver": {
+        "class": "workflow.POS",
+        "object_id": 1289454852,
+        "value": "workflow.POS@4cdb8504"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.Sale",
+      "event": "call",
+      "id": 33,
+      "lineno": 42,
+      "method_id": "makePayment",
+      "parameters": [
+        {
+          "class": "java.lang.Float",
+          "kind": "req",
+          "name": "cashTendered",
+          "object_id": 124132186,
+          "value": "650.0"
+        }
+      ],
+      "path": "src/main/java/domain/Sale.java",
+      "receiver": {
+        "class": "domain.Sale",
+        "object_id": 2046652309,
+        "value": "domain.Sale@79fd6f95"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000535,
+      "event": "return",
+      "id": 34,
+      "parent_id": 33,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000899,
+      "event": "return",
+      "id": 35,
+      "parent_id": 32,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.Sale",
+      "event": "call",
+      "id": 36,
+      "lineno": 30,
+      "method_id": "total",
+      "path": "src/main/java/domain/Sale.java",
+      "receiver": {
+        "class": "domain.Sale",
+        "object_id": 2046652309,
+        "value": "domain.Sale@79fd6f95"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 37,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 1257703748,
+        "value": "domain.SaleLineItem@4af70944"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000148,
+      "event": "return",
+      "id": 38,
+      "parent_id": 37,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 1707293586,
+        "value": "100.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 39,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 3768050,
+        "value": "domain.SaleLineItem@397ef2"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000143,
+      "event": "return",
+      "id": 40,
+      "parent_id": 39,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 2030294088,
+        "value": "400.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 41,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 1156135967,
+        "value": "domain.SaleLineItem@44e93c1f"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000189,
+      "event": "return",
+      "id": 42,
+      "parent_id": 41,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 1309191417,
+        "value": "100.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0001393,
+      "event": "return",
+      "id": 43,
+      "parent_id": 36,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 70165127,
+        "value": "600.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.Sale",
+      "event": "call",
+      "id": 44,
+      "lineno": 30,
+      "method_id": "total",
+      "path": "src/main/java/domain/Sale.java",
+      "receiver": {
+        "class": "domain.Sale",
+        "object_id": 2046652309,
+        "value": "domain.Sale@79fd6f95"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 45,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 1257703748,
+        "value": "domain.SaleLineItem@4af70944"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000668,
+      "event": "return",
+      "id": 46,
+      "parent_id": 45,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 2026706491,
+        "value": "100.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 47,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 3768050,
+        "value": "domain.SaleLineItem@397ef2"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0000825,
+      "event": "return",
+      "id": 48,
+      "parent_id": 47,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 520830206,
+        "value": "400.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "defined_class": "domain.SaleLineItem",
+      "event": "call",
+      "id": 49,
+      "lineno": 13,
+      "method_id": "subtotal",
+      "path": "src/main/java/domain/SaleLineItem.java",
+      "receiver": {
+        "class": "domain.SaleLineItem",
+        "object_id": 1156135967,
+        "value": "domain.SaleLineItem@44e93c1f"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0002377,
+      "event": "return",
+      "id": 50,
+      "parent_id": 49,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 351216770,
+        "value": "100.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0008913,
+      "event": "return",
+      "id": 51,
+      "parent_id": 44,
+      "return_value": {
+        "class": "java.lang.Float",
+        "object_id": 1705281026,
+        "value": "600.0"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.033144,
+      "event": "return",
+      "id": 52,
+      "parent_id": 1,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "App test POS",
+    "app": "app",
+    "language": {
+      "name": "java",
+      "version": "11.0.14.1+1-LTS",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "miPrincipal.AppTest",
+      "method_id": "testPOS"
+    },
+    "git": {
+      "repository": "https://github.com/ISC2105-MSW-GA-EJ24/MSW.java.mvn.pos",
+      "branch": "main",
+      "commit": "50fb96538f81112bfaad1679acc9cb87c2556a87"
+    },
+    "source_location": "src/test/java/miPrincipal/AppTest.java:22",
+    "frameworks": [
+      {
+        "name": "junit",
+        "version": "4"
+      }
+    ],
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "name": "specification",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/domain/ProductCatalog.java:23"
+            }
+          ],
+          "name": "ProductCatalog",
+          "type": "class"
+        },
+        {
+          "children": [
+            {
+              "name": "subtotal",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/domain/SaleLineItem.java:13"
+            }
+          ],
+          "name": "SaleLineItem",
+          "type": "class"
+        },
+        {
+          "children": [
+            {
+              "name": "makePayment",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/domain/Sale.java:42"
+            },
+            {
+              "name": "makeLineItem",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/domain/Sale.java:25"
+            },
+            {
+              "name": "total",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/domain/Sale.java:30"
+            },
+            {
+              "name": "becomeComplete",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/domain/Sale.java:18"
+            }
+          ],
+          "name": "Sale",
+          "type": "class"
+        }
+      ],
+      "name": "domain",
+      "type": "package"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "name": "endSale",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/workflow/POS.java:17"
+            },
+            {
+              "name": "EnterItem",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/workflow/POS.java:22"
+            },
+            {
+              "name": "makePayment",
+              "type": "function",
+              "static": false,
+              "location": "src/main/java/workflow/POS.java:32"
+            }
+          ],
+          "name": "POS",
+          "type": "class"
+        }
+      ],
+      "name": "workflow",
+      "type": "package"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "name": "testPOS",
+              "type": "function",
+              "static": false,
+              "location": "src/test/java/miPrincipal/AppTest.java:22"
+            }
+          ],
+          "name": "AppTest",
+          "type": "class"
+        }
+      ],
+      "name": "miPrincipal",
+      "type": "package"
+    }
+  ]
+}
